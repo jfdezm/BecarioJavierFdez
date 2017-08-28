@@ -3,7 +3,7 @@
  
 <style>
 		body {
-			background-image: url('/php/pruebas/examen/fondoazul.jpg');
+			background-image: url('/php/pruebas/examen/imagenes/fondoazul.jpg');
 		}
 
 		center {

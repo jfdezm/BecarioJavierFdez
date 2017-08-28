@@ -1,6 +1,6 @@
 
 <hr width=80% size=100>
-<a HREF="https://petsy.mx/" target="_blank"><IMG SRC="/php/pruebas/examen/petsy.jpg" ALIGN=LEFT WIDTH=272 HEIGTH=92> </a>
+<a HREF="https://petsy.mx/" target="_blank"><IMG SRC="/php/pruebas/examen/imagenes/petsy.jpg" ALIGN=LEFT WIDTH=272 HEIGTH=92> </a>
 
 
 <div>
