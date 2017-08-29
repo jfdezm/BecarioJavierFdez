@@ -3,7 +3,7 @@
 <head>
 	<TITLE> Resultado encuenta de Javi Fdez </TITLE>
 
-	<?php include '../../html/cabecera.php'; ?>
+	<?php include '../html/cabecera.php'; ?>
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -49,7 +49,7 @@ if(count($_POST))
 	</tbody>
 </table>
 
-<?php include '../../html/footer.php'; ?> 
+<?php include '../html/footer.php'; ?> 
 
 </body>
 </html>
