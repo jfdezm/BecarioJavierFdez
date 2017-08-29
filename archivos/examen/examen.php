@@ -1,5 +1,4 @@
-<DOCTYPE html>
-<html>
+<!DOCTYPE html>
 <head>
 
 <?php require '../../html/cabecera.php'; ?>  	
@@ -37,7 +36,7 @@
 	</fieldset>
 	
 
-<form action="/php/pruebas/examen/visualizardatos.php" method="POST">
+<form action="visualizardatos.php" method="POST">
 	<div class="container">
   <form>
     <div class="form-group row">

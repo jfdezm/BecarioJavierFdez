@@ -3,10 +3,7 @@
  
 <style>
 		body {
-			background-image: url('/php/pruebas/examen/imagenes/fondoazul.jpg');
+			background-image: url('imagenes/fondoazul.jpg');
 		}
 
-		center {
-			text-align: center;
-		}
 </style>

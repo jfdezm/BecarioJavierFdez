@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<TITLE> Resultado encuenta de Javi Fdez </TITLE>
