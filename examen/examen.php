@@ -81,16 +81,16 @@
   	</label>
 	</div>
 
-	<BR>Estado civil: <BR>
-	<select name="estado_civil" class="form-control form-control-lg">
+	<br>Estado civil: <br>
+	<select name="estadocivil" class="form-control form-control-lg">
   		<option value= "casado">Casado</option>
   		<option value= "divorciado">Divorciado</option>
   		<option value= "soltero">Soltero</option>
   		<option value= "soltero divorciado">Soltero divorciado</option>
   		<option value= "viudo">Viudo</option>
-	</select>
+	</select><br>
 
-<input type="submit" value="Submit">	
+<input type="submit" value="¡Enviar!">	
 </form>
 
 </body>

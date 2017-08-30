@@ -1,77 +1,42 @@
 <?php
 
-class Cliente
+require_once 'DAO.php';
+
+class Cliente extends DAO
 {
-	protected $nombre; 
-	protected $apellidos;
-	protected $edad;
-	protected $sexo;
-	protected $estadocivil;
+	private $datoscliente = array(
+		'nombre' 		=> '',
+		'apellidos'		=> '',
+		'edad'			=> '',
+		'sexo'			=> '',
+		'estadocivil' 	=> '');
+
 	static private $contador1 = 0;
 	static private $contador2 = 0;
-	protected $nuevocliente;
 	
+	public function __set($key,$value)
+	{
+		if(isset($this->datoscliente[$key]))
+		{
+			$this->datoscliente[$key] = $value;
+		}
+		else
+			print_r("Error, no se encuentra en la clase la propiedad : " . $key . PHP_EOL);
+	}
+
+	public function __get($key)
+	{
+		if(isset($this->datoscliente[$key]))
+		{
+			return $this->datoscliente[$key];
+		}
+		else	
+			print_r("Error, no existe la refencia del array" . $key . PHP_EOL);
+		}
 	
-
-// Este metodo nos permite implementar las propiedades del objeto
-	public function setName($nombre)
-		{
-		$this->nombre = $nombre;
-		}
-	public function setApellidos($apellidos)
-		{
-		$this->apellidos = $apellidos;
-		}
-	public function setEdad($edad)
-		{
-		$this->edad = $edad;
-		}
-	public function setSexo($sexo)
-		{
-		$this->sexo = $sexo;
-		}
-	public function setEstadoCivil($estadocivil)
-		{
-		$this->estadocivil = $estadocivil;
-		}
-// Estos métodos nos permetirán obtener el nombre del objeto.
-	public function getName()
-		{
-		return $this->nombre;
-		}
-	public function getApellidos()
-		{
-		return $this->apellidos;
-		}
-	public function getEdad()
-		{
-		return $this->edad;
-		}
-	public function getSexo()
-		{
-		return $this->sexo;
-		}
-	public function getEstadoCivil()
-		{
-		return $this->estadocivil;
-		}
-
-//  Este metodo nos permite guardar todas las propiedades y las claves en un array: 
-	public function arrayAllData()
-		{
-		$this->nuevocliente = array(
-			"nombre" => $this->nombre,
-			"apellidos" => $this->apellidos,
-			"edad" => $this->edad,
-			"sexo" => $this->sexo,
-			"estadocivil" => $this->estadocivil);
-		}
-
-// Mostramos por pantalla (Si se utiliza el método) los datos del array: 
 	public function getAllData()
 	{
-		foreach ($this->nuevocliente as $key => $value) 
-			var_dump (ucfirst($key) . "=" . $value . PHP_EOL) ;	
+		return $this->datoscliente;
 	}
 
 // Aquí vamos a contar el número de usuarios que tenemos en la lista y cuántos usuarios se han eliminado:
@@ -92,8 +57,10 @@ class Cliente
 	function __destruct()
 	{
 		Cliente::$contador1--;
-		Cliente::$contaodr2++;
+		Cliente::$contador2++;
 	}
 }
+
+
 
 ?>
