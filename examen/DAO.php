@@ -24,7 +24,7 @@ class DAO {
 			}
 		else
 			{
-				fwrite($identificador, implode(" , " , $datoscliente) . PHP_EOL );
+				fwrite($this->identificador, implode(' , ' , $datoscliente) . PHP_EOL );
 				print_r("Conseguido, se ha guardado el cliente.");
 			}
 
