@@ -48,7 +48,7 @@ if(count($_POST))
 </table>
 
 
-<!-- <?php
+<?php
 // Creamos un nuevo cliente:
 
 $cliente = new Cliente();
@@ -60,7 +60,7 @@ foreach ($_POST as $key => $value)
 $cliente-> save($cliente->getAllData());
 
 ?>
--->
+
 
 <?php include '../html/footer.php'; ?> 
 </body>
